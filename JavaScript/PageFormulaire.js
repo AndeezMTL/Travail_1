@@ -2,7 +2,7 @@
 function userInfo (){
 
   // Todo
-  document.location='accueil.html';
+  document.location='PageTache.html';
 }
 
 

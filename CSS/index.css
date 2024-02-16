@@ -1,4 +1,10 @@
-/* Nouveau fond
+/*
+
+---- Ceci est un bout de mon code personnel -----
+ 
+
+
+Nouveau fond
 Pour vert foncé : #00303b
 pour rose : #ff7777
 jaune pale : ffce96
@@ -11,7 +17,9 @@ blanc : #f1f2da*/
 
 
 
-
+/*
+---- Ceci est un bout de mon code personnel -----
+*/
 
 .bn5 {
   padding: 0.6em 2em;
@@ -89,14 +97,44 @@ blanc : #f1f2da*/
   border-radius: 10px;
 }
 
-            /*^^^^^^^^^^^^*/
-/********************Mon code (Andy)************/
+
+
+
+.nav {
+  text-align: center;
+}
+.nav a {
+position:-webkit-sticky;
+position: sticky;
+  text-align: center;
+  color: #ff7777;
+  font-size: 2.5em;
+  transition: 0.5s 0s ease;
+  margin-left: 1em;
+  margin-right: 1em;
+  transform: scale(1);
+  margin-top: 3em;
+/*border-bottom: solid #ff0f7b 3px;*/
+}
+.nav a:hover{
+  color:#ffce96;
+  transform: scale(1.2);
+  border-bottom: solid #ffbe73 6px;
+text-decoration: none;
+}
+a {
+  display: inline-block;
+}
+
+  /*
+                    ^^^^^^^^^^^^
+*******************Mon code (Andy)************/
 
 h1{
   padding-top: 10px;
   text-align: center;
   color: #ffc17b;
-  font-family: 'Courier New', Courier, monospace;
+  font-family:Arial, Helvetica, sans-serif
   font-size: 2.3em;
 }
 

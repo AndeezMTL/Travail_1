@@ -4,7 +4,135 @@ Pour vert foncé : #00303b
 pour rose : #ff7777
 jaune pale : ffce96
 blanc : #f1f2da*/
+.nav {
+    text-align: center;
+    position:relative;
+    margin-top: 20px;
+  }
+  .nav a {
+  position:-webkit-sticky;
+  position: sticky;
+    text-align: center;
+    color: #ff7777;
+    font-size: 2.5em;
+    transition: 0.5s 0s ease;
+    margin-left: 1em;
+    margin-right: 1em;
+    transform: scale(1);
+    margin-top: 3em;
+  /*border-bottom: solid #ff0f7b 3px;*/
+  }
+  .nav a:hover{
+    color:#ffce96;
+    transform: scale(1.2);
+    border-bottom: solid #ffbe73 6px;
+  text-decoration: none;
+  }
+  a {
+    display: inline-block;
+  }
+  
+.bn5 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: #ffce96;
+  background: #00303b;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
 
+.bn5:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff7777,
+    #ff9c9c,
+    #ffce96,
+    #ffc17b,
+    #ffce96,
+    #ff9c9c,
+    #ff7777,
+    #ff9c9c,
+    #ffc17b
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowingbn5 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowingbn5 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.bn5:active {
+  color: #00303b;
+}
+
+.bn5:active:after {
+  background: transparent;
+}
+
+.bn5:hover:before {
+  opacity: 1;
+}
+
+.bn5:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #003844;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+/*
+Icon pour effacer et done
+*/
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 200,
+  'opsz' 24
+}
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 200,
+  'opsz' 24
+}
+
+
+
+    /*
+                      ^^^^^^^^^^^^
+  *******************Mon code (Andy)************/
 *{
     background-color: #00303b;
 }
@@ -29,12 +157,12 @@ blanc : #f1f2da*/
     left: 0;
 }
 
-.w3-sidebar{height:100%;
+.w3-sidebar{
     width:200px;
      color: #ff7777;
          border: 2px solid #ff7777;
     border-radius: 10px;
-    ;position:fixed!important;
+    ;position:relative;
     z-index:1;
     overflow:none}
 .w3-bar-block .w3-bar-item{width:100%;
