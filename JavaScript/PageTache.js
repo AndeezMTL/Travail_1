@@ -20,7 +20,7 @@ const addTaskBtn = document.getElementById("addTask") ;
 const taskList = document.getElementById("taskList") ;
 
 const clearAll = document.getElementById("clearAll")
-
+var tasklocal = "task"
 var task = "undone task ";
 var done = "task done ";
 var i = 0;
@@ -57,9 +57,9 @@ function addTask() {
 
     const doneBtn = document.createElement("img");
 
-    doneBtn.setAttribute("src", "./Images/icons8-checkmark-50.png");
-    doneBtn.setAttribute('height', '18px');
-    doneBtn.setAttribute('width', '18px');
+    doneBtn.setAttribute("src", "./Images/done.png");
+    doneBtn.setAttribute('height', '30px');
+    doneBtn.setAttribute('width', '30px');
 
     listItem.appendChild(doneBtn);
 
@@ -81,9 +81,11 @@ function addTask() {
 
     const deleteBtn = document.createElement("img");
 
-    deleteBtn.setAttribute("src", "./Images/icons8-delete-60.png");
-    deleteBtn.setAttribute('height', '18px');
-    deleteBtn.setAttribute('width', '18px');
+    deleteBtn.setAttribute("src", "./Images/delete.png");
+    deleteBtn.setAttribute('height', '30px');
+    deleteBtn.setAttribute('width', '30px');
+    deleteBtn.setAttribute('color','#ff7777');
+    deleteBtn.setAttribute('background-color','#ff7777');
 
     // La méthode JavaScript appendChild() est utilisée pour insérer un nouveau noeud ou repositionner un
 
@@ -105,4 +107,6 @@ localStorage.setItem(task.concat(i), (taskText), i++)
 clearAll.addEventListener("click", () => {
     localStorage.clear()
 })
+localStorage.setItem(tasklocal.concat(i), taskText);
+i++;
 }
