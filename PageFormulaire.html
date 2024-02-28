@@ -52,8 +52,8 @@
     </div>
 
     <!----------------------------------------------- <h2>Formulaire de connexion</h2> --------------------------------->
-    <button id="butConnexion" onclick="document.getElementById('id02').style.display='block'" class="bn5" style="width:auto;">Se connecter</button>
-    <div class="login-box">
+    <button id="butConnexion" onclick="document.getElementById('id04').style.display='block'" class="bn5" style="width:auto;">Se connecter</button>
+    <div class="login-box" id="id02">
  
         <form>
           <div class="user-box">
@@ -74,7 +74,10 @@
     
     <form class="modal-content animate" action="" method="post">
         <div class="imgcontainer">
-        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+        
+        
+        <!--
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
         <img src="./Images/télécharger.png" alt="Avatar" class="avatar">
         </div>
 
@@ -85,7 +88,7 @@
         <input type="password" placeholder="Entrer le mot de passe" name="psw" required>
         <!-- <a href="accueil.html">
             <button type="submit" onclick="window.location.href==accueil.html">Login</button>
-        </a> -->
+        </a> 
         </div>
 
         <button id="sub" onclick="userInfo()" class="bn5">Se connecter</button>
@@ -99,7 +102,7 @@
             <span class="bn5">Mot de passe<a href="#"> oublié?</a></span>  
         </div>
     </form>
-
+        -->
     </div>
 </div>
 <!----------------------------------------------------Formulaire de connexion de andy----------------------->
