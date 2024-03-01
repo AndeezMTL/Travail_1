@@ -17,32 +17,22 @@
     <div id="divParent">
 
         <!----------------------------------------- <h2>Formulaire d'inscription</h2> --------------------------------->
-        <button id="butInscription" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"
-            class="bn5">S'inscrire</button>
+        <button id="butInscription" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="bn5">S'inscrire</button>
+        <button id="butConnexion" onclick="document.getElementById('id02').style.display='block'" class="bn5" style="width:auto;">Se connecter</button>
+
         <div id="id01" class="login-box">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                title="Close Modal">&times;</span>
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal" >&times;</span>
+
             <form method="post" action="">
                 <div class="user-box">
                     <h1>S'inscrire</h1>
                     <p>Veuillez remplir ce formulaire pour créer un compte.</p>
-                    <hr>
-                    
-                    <input type="text" placeholder="Entrez votre e-mail" name="email" required>
-                    <label>E-mail</label>
 
-                    
-                    <input type="password" placeholder="Entrer le mot de passe" name="psw" required>
-                    <label>Mot de passe</label>
+                    <input type="text" placeholder="Entrez votre e-mail" name="email" required="">
+                    <input type="password" placeholder="Entrer le mot de passe" name="psw" required="">
+                    <input type="password" placeholder="Répéter le mot de passe" name="psw-repeat" required="">
 
-                    
-                    <input type="password" placeholder="Répéter le mot de passe" name="psw-repeat" required>
-                    <label>>Répéter le mot de passe</label>
-
-                    <label>Se souvenir de moi</label>
-                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> 
-
-                    <p>En créant un compte, vous acceptez nos Conditions et confidentialité.</p>
+                    <p class="Conditions">En créant un compte, vous acceptez nos Conditions et confidentialité.</p>
                     <div class="clearfix">
                         <button type="button" onclick="document.getElementById('id01').style.display='none'"class="bn5">
                             Cancel
@@ -52,13 +42,11 @@
                 </div>
             </form>
         </div>
-
         <!----------------------------------------------- <h2>Formulaire de connexion</h2> --------------------------------->
-        <button id="butConnexion" onclick="document.getElementById('id02').style.display='block'" class="bn5"
-            style="width:auto;">Se connecter</button>
+        
+
         <div class="login-box" id="id02">
-            <span onclick="document.getElementById('id02').style.display='none'" class="close"
-                title="Close Modal">&times;</span>
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
 
 
             <form action="" method="post">

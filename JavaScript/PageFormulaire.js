@@ -16,7 +16,7 @@ i++;
 
 
 // ////////////////// Obtenez le modal d'inscription ///////////////////////
- var modal = document.getElementById('id02');
+ var modal = document.getElementById('id01');
 
 // // Lorsque l'utilisateur clique n'importe où en dehors du modal, fermez-le
  window.onclick = function(event) {
