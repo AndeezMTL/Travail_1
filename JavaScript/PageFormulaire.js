@@ -1,18 +1,16 @@
 ////////////////// Obtenez le modal d'inscription ///////////////////////
-function userInfo (){
-
+function userInfo(){
   // Todo
-  const user = document.getElementsByName("email");
-  const pwd = document.getElementsByName("psw");
+  const user = document.getElementsById("userI").value;
+  const pwd = document.getElementsById("pwdI").value;
 
-  localStorage.setItem(user.concat(i), email);
-i++;
-localStorage.setItem(pwd.concat(i), psw);
-i++;
+  localStorage.setItem("user", user);
 
-  document.location='PageTache.html';
+  localStorage.setItem("pwd", pwd);
 }
-
+function connexion(){
+    // document.location='PageTache.html';
+}
 
 
 // ////////////////// Obtenez le modal d'inscription ///////////////////////

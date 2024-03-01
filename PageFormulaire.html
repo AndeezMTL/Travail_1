@@ -23,21 +23,21 @@
         <div id="id01" class="login-box">
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal" >&times;</span>
 
-            <form method="post" action="">
+            <form>
                 <div class="user-box">
                     <h1>S'inscrire</h1>
                     <p>Veuillez remplir ce formulaire pour créer un compte.</p>
 
-                    <input type="text" placeholder="Entrez votre e-mail" name="email" required="">
-                    <input type="password" placeholder="Entrer le mot de passe" name="psw" required="">
-                    <input type="password" placeholder="Répéter le mot de passe" name="psw-repeat" required="">
+                    <input id="userI" type="text" placeholder="Entrez votre e-mail" name="email" required>
+                    <input id="pwdI" type="password" placeholder="Entrer le mot de passe" name="psw" required>
+                    <input type="password" placeholder="Répéter le mot de passe" name="psw-repeat" required>
 
                     <p class="Conditions">En créant un compte, vous acceptez nos Conditions et confidentialité.</p>
                     <div class="clearfix">
                         <button type="button" onclick="document.getElementById('id01').style.display='none'"class="bn5">
                             Cancel
                         </button>
-                        <button type="submit" class="bn5">S'inscrire</button>
+                        <button class="bn5" onclick="userInfo()">S'inscrire</button>
                     </div>
                 </div>
             </form>
@@ -59,10 +59,7 @@
                     <label>Password</label>
                 </div>
                 <center>
-                    <a href="#" id="sub" onclick="userInfo()">
-                        Se connecter
-                        <span></span>
-                    </a>
+                    <button id="sub" onclick="" >Se connecter</button>
                 </center>
                 <div class="clearfix">
                     <div class="container" >

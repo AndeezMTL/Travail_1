@@ -59,6 +59,7 @@ p{
 
 .login-box .user-box {
   position: relative;
+  background-color: #00303b;
 }
 
 .login-box .user-box input {
