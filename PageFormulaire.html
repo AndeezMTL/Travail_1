@@ -27,21 +27,22 @@
                     <h1>S'inscrire</h1>
                     <p>Veuillez remplir ce formulaire pour créer un compte.</p>
                     <hr>
-                    <label for="email"><b>E-mail</b></label>
+                    
                     <input type="text" placeholder="Entrez votre e-mail" name="email" required>
+                    <label>E-mail</label>
 
-                    <label for="psw"><b>Mot de passe</b></label>
+                    
                     <input type="password" placeholder="Entrer le mot de passe" name="psw" required>
+                    <label>Mot de passe</label>
 
-                    <label for="psw-repeat"><b>Répéter le mot de passe</b></label>
+                    
                     <input type="password" placeholder="Répéter le mot de passe" name="psw-repeat" required>
-                    <label>
-                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> 
-                        Se souvenir de moi
-                    </label>
-                    <p>En créant un compte, vous acceptez nos
-                        <a href="#" style="color:#003844">Conditions et confidentialité</a>.
-                    </p>
+                    <label>>Répéter le mot de passe</label>
+
+                    <label>Se souvenir de moi</label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> 
+
+                    <p>En créant un compte, vous acceptez nos Conditions et confidentialité.</p>
                     <div class="clearfix">
                         <button type="button" onclick="document.getElementById('id01').style.display='none'"class="bn5">
                             Cancel
@@ -52,7 +53,6 @@
             </form>
         </div>
 
-<<<<<<< HEAD
         <!----------------------------------------------- <h2>Formulaire de connexion</h2> --------------------------------->
         <button id="butConnexion" onclick="document.getElementById('id02').style.display='block'" class="bn5"
             style="width:auto;">Se connecter</button>
@@ -79,7 +79,7 @@
                 <div class="clearfix">
                     <div class="container" >
                         
-                        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Annuler</button>
+                        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="bn5">Annuler</button>
                         <span class="bn5" onclick="alert('mais quel noob!')">Mot de passe oublié?</span>  
                     </div>
 
@@ -87,42 +87,13 @@
         </div>
 
 
-        <!-- Ancien formulaire de connexii-->
+        <!-- Ancien formulaire de connexion-->
 
         <!-- <div id="id02" class="modal">
     
     <form class="modal-content animate" action="" method="post">
         <div class="imgcontainer">
 
-=======
-    <!----------------------------------------------- <h2>Formulaire de connexion</h2> --------------------------------->
-    <button id="butConnexion" onclick="document.getElementById('id04').style.display='block'" class="bn5" style="width:auto;">Se connecter</button>
-    <div class="login-box" id="id02">
- 
-        <form>
-          <div class="user-box">
-            <input type="text" name="uname" required="">
-            <label>Username</label>
-          </div>
-          <div class="user-box">
-            <input type="password" name="psw" required="">
-            <label>Password</label>
-          </div><center>
-          <a href="#">
-                 Se connecter
-             <span></span>
-          </a></center>
-        </form>
-      </div>
-    <div id="id02" class="modal">
-    
-    <form class="modal-content animate" action="" method="post">
-        <div class="imgcontainer">
-        
-        
-        <!--
-            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
->>>>>>> 50fc8178ca092ac809ff63d50de4422f3c727948
         <img src="./Images/télécharger.png" alt="Avatar" class="avatar">
         </div>
 
@@ -133,11 +104,8 @@
         <input type="password" placeholder="Entrer le mot de passe" name="psw" required>
         <a href="accueil.html">add .
             <button type="submit" onclick="window.location.href==accueil.html">Login</button>
-<<<<<<< HEAD
         </a>
-=======
         </a> 
->>>>>>> 50fc8178ca092ac809ff63d50de4422f3c727948
         </div>
 
         <button id="sub" onclick="userInfo()" class="bn5">Se connecter</button>
@@ -152,28 +120,6 @@
         </div>
     </form>
         -->
-    </div>
-</div> -->
-        <!----------------------------------------------------Formulaire de connexion de andy----------------------->
-
-
-        <!--
-
-<button id="butConnexion" onclick="document.getElementById('id02').style.display='block'" class="bn5" style="width:auto;">Se connecter</button>
-
-    <div id="id02" class="modal">
-    
-    <div class="container">
-        <div class="heading">se connecter</div>
-        <form action="" class="form">
-          <input  class="input" type="text" name="email" id="email" placeholder="Entrez votre e-mail" required>
-          <input  class="input" type="password" name="psw" id="password" placeholder="Entrez votre mot de passe" required>
-          <span class="forgot-password"><a href="#">Forgot Password ?</a></span>
-          <input class="login-button" type="submit" value="Sign In" id="sub" onclick="userInfo()">
-        </form>
-  
-</div>
- -->
     <script src="./JavaScript/PageFormulaire.js"></script>
 </body>
 </html>
