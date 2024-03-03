@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La liste des tâches</title>
+    <title>Andy.ca - Page de connexion</title>
+    <link rel="shortcut icon" href="./Images/Facebook_f_logo_(2021).svg.png" type="image/x-icon">
     <link rel="stylesheet" target=_blank href="./CSS/index.css">
 </head>
 <body>
@@ -19,15 +20,12 @@
         <!----------------------------------------- <h2>Formulaire d'inscription</h2> --------------------------------->
         <button id="butInscription" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="bn5">S'inscrire</button>
         <button id="butConnexion" onclick="document.getElementById('id02').style.display='block'" class="bn5" style="width:auto;">Se connecter</button>
-
         <div id="id01" class="login-box">
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal" >&times;</span>
-
             <form>
                 <div class="user-box">
                     <h1>S'inscrire</h1>
                     <p>Veuillez remplir ce formulaire pour créer un compte.</p>
-
                     <input id="userI" type="text" placeholder="Entrez votre e-mail" name="email" required>
                     <input id="pwdI" type="password" placeholder="Entrer le mot de passe" name="psw" required>
                     <input type="password" placeholder="Répéter le mot de passe" name="psw-repeat" required>
@@ -43,68 +41,27 @@
             </form>
         </div>
         <!----------------------------------------------- <h2>Formulaire de connexion</h2> --------------------------------->
-        
-
         <div class="login-box" id="id02">
             <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-
-
             <form action="" method="post">
                 <div class="user-box">
-                    <input type="text" name="uname" required="">
+                    <input type="text" name="uname" required="" id="userI">
                     <label>Username</label>
                 </div>
                 <div class="user-box">
-                    <input type="password" name="psw" required="">
+                    <input type="password" name="psw" required="" id="pwdI">
                     <label>Password</label>
                 </div>
                 <center>
-                    <button id="sub" onclick="" >Se connecter</button>
+                    <button id="sub" onclick="connexion()" >Se connecter</button>
                 </center>
                 <div class="clearfix">
                     <div class="container" >
-                        
                         <button type="button" onclick="document.getElementById('id02').style.display='none'" class="bn5">Annuler</button>
                         <span class="bn5" onclick="alert('mais quel noob!')">Mot de passe oublié?</span>  
                     </div>
-
             </form>
         </div>
-
-
-        <!-- Ancien formulaire de connexion-->
-
-        <!-- <div id="id02" class="modal">
-    
-    <form class="modal-content animate" action="" method="post">
-        <div class="imgcontainer">
-
-        <img src="./Images/télécharger.png" alt="Avatar" class="avatar">
-        </div>
-
-        <div class="container">
-        <label for="uname"><b>Nom d'utilisateur</b></label>
-        <input type="text" placeholder="Saisissez votre nom d'utilisateur" name="uname" required>
-        <label for="psw"><b>Mot de passe</b></label>
-        <input type="password" placeholder="Entrer le mot de passe" name="psw" required>
-        <a href="accueil.html">add .
-            <button type="submit" onclick="window.location.href==accueil.html">Login</button>
-        </a>
-        </a> 
-        </div>
-
-        <button id="sub" onclick="userInfo()" class="bn5">Se connecter</button>
-
-        <label>
-            <input type="checkbox" checked="checked" name="remember" > Souviens-toi de moi
-        </label>
-        
-        <div class="container" >
-            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Annuler</button>
-            <span class="bn5">Mot de passe<a href="#"> oublié?</a></span>  
-        </div>
-    </form>
-        -->
     <script src="./JavaScript/PageFormulaire.js"></script>
 </body>
 </html>

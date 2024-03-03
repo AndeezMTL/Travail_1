@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andy.ca - Page de tache</title>
+    <link rel="shortcut icon" href="./Images/Facebook_f_logo_(2021).svg.png" type="image/x-icon">
+    <link rel="stylesheet" target="_blank" href="./CSS/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Todo List</title>
-        <link rel="stylesheet" target=_blank href="./CSS/style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    </head>
+  </head>
+  <body>
 
-    <body>
-          <!-------------------------------------- Sidebar --------------------------------------->
-        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-            <button onclick="w3_close()" class="bn5">Close &times;</button>
-        <div id="div1"> <a href="#" class="bn5">Groupe de tâches en application web</a></div>
-        <div id="div2"><a href="#" class="bn5">Groupe de tâches "2"</a></div>
-        <div id="div3"><a href="#" class="bn5">Groupe de tâches "3"</a></div>
-        </div>
-        <!-------------------------------------- Bouton de la barre latérale --------------------------------------->
-
-        <div class="w3-teal">
-            <button class="bn5" onclick="w3_open()">☰</button>
-            <div class="w3-container">
-            </div>
-        </div>
-
+    <!-------------------------------------- Sidebar --------------------------------------->
+    <div class="head">
         <nav class="nav">
             <a href="PageFormulaire.html">Page de connexion</a>
             <a href="PageTache.html">page de tache</a>
-        </nav>
-
-
-        <!-------------------------------------- Listes des tâches --------------------------------------->
-        <div class="container">
-            <div class="centrerhaut">        
-            <h1>Ma Liste de tâches</h1>
-            <input type="text" id="taskInput" placeholder="Nouvelle tâche...">
-            <button id="addTask" class="bn5">Ajouter</button>
+          </nav>
+          <div class="w3-sidebar w3-bar-block w3-border-right" style="display: none" id="mySidebar">
+            <button onclick="w3_close()" class="bn5">Close &times;</button>
+            <div id="div1">
+              <a href="#" class="bn5">Groupe de tâches en application web</a>
+            </div>
+            <div id="div2"><a href="#" class="bn5">Groupe de tâches "2"</a></div>
+            <div id="div3"><a href="#" class="bn5">Groupe de tâches "3"</a></div>
+          </div>
+          <!-------------------------------------- Bouton de la barre latérale --------------------------------------->
+          <div class="w3-teal">
+            <button class="bn5" onclick="w3_open()" id="button =">☰</button>
+            <div class="w3-container"></div>
+          </div>
+          <div class="container">
+            <div class="centrerhaut">
+              <h1>Ma Liste de tâches</h1>
+              <input type="text" id="taskInput" placeholder="Nouvelle tâche..." />
+              <button id="addTask" class="bn5">Ajouter</button>
             </div>
             <ul id="taskList"></ul>
             <button id="clearAll" class="bn5">Effacer LocalStorage</button>
-        </div>
+          </div>
+    </div>
+    
 
+    <!-------------------------------------- Listes des tâches --------------------------------------->
+    
 
-        <script src="./JavaScript/PageTache.js"></script>
-    </body>
-
+    <script src="./JavaScript/PageTache.js"></script>
+  </body>
 </html>
-
